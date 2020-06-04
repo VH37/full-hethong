@@ -1,0 +1,19 @@
+{
+  "name": "fullcode",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "@serialport/parser-readline": "^9.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "serialport": "^9.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

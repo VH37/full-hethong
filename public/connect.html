@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface</title>
+    <link rel="stylesheet" href="./connect.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="image">
+      <img src="./js/image/Logo-VNU-1995.png" alt="" width="65" height="65">
+      <img src="./js/image/images.png" alt="" width="85" height="80">
+      <img src="./js/image/unnamed.gif" alt="" width="130" height="80">
+    </div>
+
+    <div class="index">
+      <h4  style="font-size: 40px;">  ĐẠI HỌC QUỐC GIA HÀ NỘI <br> TRƯỜNG ĐẠI HỌC CÔNG NGHỆ </h4>
+      <h5> KHOA CƠ HỌC KỸ THUẬT VÀ TỰ ĐỘNG HÓA <br> </h5>
+      <h5>Môn học: Hệ thống cơ điện tử </h5>
+      <h5>Đề tài nghiên cứu: Hệ thống dây chuyền phân loại sản phẩm theo kích thước</h5>
+      <h6 style="font-size: 30px;"> <br> Bảng điều khiển hệ thống</h6>
+    </div>
+      <div class="button">
+        <button class="btn btn-danger" id="button-start">START</button>
+        <button class="btn btn-primary" id="button-pause">PAUSE</button>
+        <button class="btn btn-success" id="button-reset">RESET</button>
+      </div>
+    </div>
+    <br>
+    <div class="assembly">
+      <img src="./js/image/a.gif" style="display: none;" id="gif-start" alt="">
+      <img src="./js/image/b.jpg" style="height: 260px;" id="gif-pause" alt="">
+    </div>
+
+    <h5 class="d-flex justify-content-center"> <br> Đếm số lượng sản phẩm</h5>
+      <div class="result">
+        <div class="border border-primary mr-5">
+          <p>Sản phẩm thấp </p>
+          <span id="count-short">0</span>
+        </div>
+        <div class="border border-primary mr-5">
+          <p>Sản phẩm vừa </p>
+          <span id="count-medium">0</span>
+        </div>
+        <div class="border border-primary mr-5">
+          <p>Sản phẩm cao </p>
+          <span id="count-tall">0</span>
+        </div>
+        <div class="border border-primary">
+          <p>Tổng sản phẩm</p>
+          <span id="count-total">
+            0
+          </span>
+        </div>
+      </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/connect.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="image">
+      <img src="./js/image/Logo-VNU-1995.png" alt="" width="130" height="130">
+      <img src="./js/image/images.png" alt="" width="170" height="160">
+      <img src="./js/image/unnamed.gif" alt="" width="250" height="160">
+    </div>
+    
+    <div class="index">
+      <h1> ĐẠI HỌC QUỐC GIA HÀ NỘI <br> TRƯỜNG ĐẠI HỌC CÔNG NGHỆ </h1>
+      <h3><br> KHOA CƠ HỌC KỸ THUẬT VÀ TỰ ĐỘNG HÓA <br> </h3>
+      <h4>Môn học: Hệ thống cơ điện tử </h4>
+      <h4>Đề tài nghiên cứu: Hệ thống dây chuyền phân loại sản phẩm theo kích thước</h4>
+      <h4> <br> Select COM port</h4>
+    </div>
+    <form class="select" id="form-select-port">
+      <select class="btn btn-secondary dropdown-toggle" name="list-port" id="list-port"></select>
+      <button class="btn btn-info" id="submitButton" type="submit"> Submit</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
